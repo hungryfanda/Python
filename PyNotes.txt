@@ -1,0 +1,43 @@
+- Python will ignore string literals that are not assigned to a variable, It will read the Strings and ignore them but comments are not read by interpreter
+- 3 Types of Py Codes - Functional, OOP, Procedural
+- CamelCase - myVarName
+  PascalCase - myVarName
+  SnakeCase - my_var_name
+- fruits = ["apple", "banana", "cherry"]
+x, y, z = fruits -> Unpacking a List (Collection of Values)
+- To create a global variable inside a function, you can use the global keyword
+def myfunc(): #To Change Global var inside Function
+  global x
+  x = "fantastic"
+- Tuple: immutable, stored in Single Sized Block
+List: mutable, stored in 2 blocks (Object info - fixed size, data - variable size)
+- Python Data Types
+Text Type:	str
+Numeric Types:	int, float, complex
+Sequence Types:	list, tuple, range
+Mapping Type:	dict
+Set Types:	set, frozenset
+Boolean Type:	bool
+Binary Types:	bytes, bytearray, memoryview
+None Type:	NoneType
+- Casting - int(), float(), str() - Constructors
+- To specify a string as an f-string, simply put an f in front of the string literal, and add curly brackets {} as placeholders for variables and other operations. - f"My name is John, I am {age}"
+- bool(<value>)
+Any string is True, except empty strings.
+Any number is True, except 0.
+Any list, tuple, set, and dictionary are True, except empty ones.
+- isinstance() function, which can be used to determine if an object is of a certain data type
+- Identity Operators - is, is not
+membership operaors - in, not in
+- thislist.insert(2, "watermelon")
+- thislist.append("orange"); thislist.extend(tropical); thislist.remove("banana"); thislist.pop(1); del thislist[0]; thislist.clear()
+- [print(x) for x in thislist] -> List Comprehension
+- List Comprehension
+for x in fruits:
+  if "a" in x:
+    newlist.append(x) => newlist = [x for x in fruits if "a" in x] (newlist = [expression for item in iterable if condition == True])
+- thislist.sort(reverse = True) - Descending sort
+- thislist.reverse()
+- mylist = thislist.copy(); You cannot copy a list simply by typing list2 = list1, because: list2 will only be a reference to list1, and changes made in list1 will automatically also be made in list2.
+- mylist = list(thislist) - Copy List; mylist = thislist[:]
+- 
