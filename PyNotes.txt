@@ -40,4 +40,41 @@ for x in fruits:
 - thislist.reverse()
 - mylist = thislist.copy(); You cannot copy a list simply by typing list2 = list1, because: list2 will only be a reference to list1, and changes made in list1 will automatically also be made in list2.
 - mylist = list(thislist) - Copy List; mylist = thislist[:]
-- 
+- You can convert the tuple into a list, change the list, and convert the list back into a tuple.
+- When creating a tuple with only one item, remember to include a comma after the item, otherwise it will not be identified as a tuple.
+- del thistuple= Deleted the Tuple Completely
+- Unpacking a Tuple
+fruits = ("apple", "banana", "cherry")
+(green, yellow, red) = fruits
+(a, *B) = fruits => B = ["banana","cherry"]
+- If the asterisk is added to another variable name than the last, Python will assign values to the variable until the number of values left matches the number of variables left.
+- mytuple = fruits * 2 => ('apple', 'banana', 'cherry', 'apple', 'banana', 'cherry')
+- myset = {"apple", "banana", "cherry"} - Set items are unordered, unchangeable, and do not allow duplicate values.
+- (True, 1) and (False,0) are considered same in Sets and are Duplicates
+- thisset = set(("apple", "banana", "cherry")) - Set Constructor
+- Set Items are not indexed so cannot be accessed directly
+- thisset.remove("banana") = If the item to remove does not exist, remove() will raise an error.
+thisset.discard("banana") = If the item to remove does not exist, discard() will NOT raise an error.
+- clear() method empties the set, del removes set
+- Join Sets
+The union() and update() methods joins all items from both sets. - A|B - set3 = set1 | set2; |= for update
+* The union() method returns a new set with all items from both sets.
+* The update() changes the original set, and does not return a new set.
+The intersection() method keeps ONLY the duplicates. - A&B; &= for update
+* The intersection() method will return a new set, that only contains the items that are present in both sets.
+The difference() method keeps the items from the first set that are not in the other set(s). - A-B; -= for update
+* The difference() method will return a new set that will contain only the items from the first set that are not present in the other set.
+* The difference_update() method will also keep the items from the first set that are not in the other set, but it will change the original set instead of returning a new set.
+The symmetric_difference() method keeps all items EXCEPT the duplicates - A|B - A&B = A^B;  ^= for update
+* The symmetric_difference_update() method will also keep all but the duplicates, but it will change the original set instead of returning a new set.
+** * The  |, &, -, ^ operator only allows you to join sets with sets, and not with other data types
+- A dictionary is a collection which is ordered*, changeable and do not allow duplicates.
+thisdict = dict(name = "John", age = 36, country = "Norway")
+x = thisdict.get("model")
+thisdict.keys(); thisdict.values()
+thisdict.items() - Get List of Key:value pairs
+thisdict.update({"year": 2020})
+The popitem() method removes the last inserted item (in versions before 3.7, a random item is removed instead)
+del thisdict["model"] or del thisdict
+mydict = thisdict.copy()
+A dictionary can contain dictionaries, this is called nested dictionaries
